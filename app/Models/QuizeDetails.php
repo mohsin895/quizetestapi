@@ -18,5 +18,9 @@ class QuizeDetails extends Model
     {
         return $this->hasOne('App\Models\Question','quize_details_id','id');
     }
+    public function totalMarksInfoStudent()
+    {
+        return $this->hasOne('App\Models\UserAnswer','quize_details_id','id');
+    }
 }
 

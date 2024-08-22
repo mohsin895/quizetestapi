@@ -18,6 +18,9 @@ class UserQuizeController extends Controller
         $dataList = QuizeDetails::with(['totalMarksInfo' => function($query) {
           $query->select('quize_details_id', \DB::raw('SUM(question_marks) as totalMarks'))
                 ->groupBy('quize_details_id'); // Add this line
+      },'totalMarksInfoStudent' => function($query) {
+          $query->select('quize_details_id', \DB::raw('SUM(marks) as totalMarks'))
+                ->groupBy('quize_details_id'); // Add this line
       }])
       ->orderBy('id','desc')->get();
         return response()->json($dataList);
