@@ -1,0 +1,31 @@
+## Quze Test Api 
+
+
+1) First Clone quzetestapi 
+2) then update composer update
+3) copy .env.example to .env
+4) commend php artisan key:generate
+5) then name database
+6)php artisan migrate:fresh --seed
+7)php artisan passport:install
+8) Would you like to run all pending database migrations? (yes/no) [yes]:
+ >y
+9) Would you like to create the "personal access" and "password grant" clients? (yes/no) [yes]:
+ >y
+
+## Backend 
+1) first git clone 
+2) then go to api folder
+3) npm install
+4) Please ensure that the git repository name and folder name r same for api
+5) npm run dev
+
+
+
+##Login and registration
+
+1) For admin use Staff table
+2) for student use Employee table
+
+## Some check
+1) Vide tutorial sample
